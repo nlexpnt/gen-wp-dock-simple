@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo apt install ansible -y
+sudo apt install docker-compose -y
+ansible-galaxy install geerlingguy.docker
+sudo docker-compose up -d
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow 8000
